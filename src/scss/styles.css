@@ -1,7 +1,11 @@
 .vide {
   width: 100vw;
   height: 100vh;
-  transition: all .25s; }
+  transition: all .25s;
+  filter: blur(15px); }
+
+.vide:hover {
+  filter: none; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -117,4 +121,4 @@ nav.row {
       position: relative;
       top: -3px; }
 
-/*# sourceMappingURL=styles.min.css.map */
+/*# sourceMappingURL=styles.css.map */

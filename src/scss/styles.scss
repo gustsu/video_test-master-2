@@ -4,12 +4,9 @@ $primary:#1373E5;
 	width: 100vw;
 	height: 100vh;
 	transition:all .25s;
-	filter: blur(15px);
 }
 
-.vide:hover {
-	filter: none;
-}
+
 
 body {
   font-family: 'Open Sans', sans-serif;
