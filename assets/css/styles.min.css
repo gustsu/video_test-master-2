@@ -1,0 +1,124 @@
+.vide {
+  width: 100vw;
+  height: 100vh;
+  transition: all .25s;
+  filter: blur(15px); }
+
+.vide:hover {
+  filter: none; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background: #fff;
+  overflow: hidden; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  box-shadow: inset 0 -19px 0 -15px #1373E5;
+  transition: all .25s; }
+  a:hover {
+    box-shadow: inset 0 -90px 0 -15px #1373E5; }
+
+h1 {
+  font-size: 10em;
+  margin-bottom: .25em;
+  margin: 0px;
+  text-align: center; }
+
+h2 {
+  font-size: 2em;
+  margin-bottom: .75em; }
+
+p {
+  font-size: 30px;
+  line-height: 50px; }
+
+.row {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.half {
+  width: 50%;
+  display: block;
+  float: left; }
+
+nav.row {
+  padding: 2em 3em; }
+  nav.row .lnr {
+    float: right;
+    font-size: 2em;
+    position: relative;
+    top: 3px;
+    color: #1373E5; }
+  nav.row span {
+    display: block;
+    text-align: center; }
+  nav.row ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right; }
+    nav.row ul li {
+      display: block;
+      float: left;
+      margin-left: 1em; }
+      nav.row ul li a {
+        color: #1373E5;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400; }
+        nav.row ul li a:hover {
+          color: #ccc; }
+  nav.row .logo {
+    font-family: 'Sansita', sans-serif;
+    color: #1373E5;
+    font-size: 1.25em; }
+    nav.row .logo a {
+      color: #1373E5;
+      text-decoration: none;
+      box-shadow: none; }
+      nav.row .logo a:hover {
+        box-shadow: none; }
+
+.content-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 1em; }
+
+.social-container {
+  width: 100%;
+  text-align: center; }
+  .social-container a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 36.5px;
+    height: 36.5px;
+    border-radius: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+    font-size: 2em;
+    transition: all .25s;
+    box-shadow: none; }
+    .social-container a:hover {
+      background: #1373E5;
+      border: 1px solid transparent;
+      color: #fff;
+      transform: scale(1.1); }
+    .social-container a i {
+      position: relative;
+      top: -3px; }
+
+/*# sourceMappingURL=styles.min.css.map */

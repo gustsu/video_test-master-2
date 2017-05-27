@@ -1,0 +1,155 @@
+$primary:#1373E5;
+
+.vide {
+	width: 100vw;
+	height: 100vh;
+	transition:all .25s;
+	filter: blur(15px);
+}
+
+.vide:hover {
+	filter: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+  background:#fff;
+  overflow: hidden;
+}
+a {
+	color: #fff;
+    text-decoration: none;
+    box-shadow: inset 0 -19px 0 -15px $primary;
+    transition: all .25s;
+    &:hover {
+    	box-shadow: inset 0 -90px 0 -15px $primary;
+    };
+}
+
+h1 {
+  font-size:10em;
+  margin-bottom:.25em;
+  margin: 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size:2em;
+  margin-bottom:.75em;
+}
+p {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+
+.row {
+  max-width:1040px;
+  width:100%;
+  margin:0 auto;
+  padding:0 1em;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.half {
+  width:50%;
+  display:block;
+  float: left;
+}
+nav.row {
+  padding:2em 3em;
+  .lnr {
+    float: right;
+    font-size: 2em;
+    position: relative;
+    top: 3px;
+    color:$primary;
+  }
+  span {
+  	display: block;
+  	text-align: center;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+    
+    li {
+      display: block;
+      float: left;
+      margin-left:1em;
+      
+      a {
+        color:$primary;
+        text-decoration:none;
+        font-size:16px;
+        font-weight:400;
+        
+        &:hover {
+          color:#ccc;
+        }
+      }
+    }
+  }
+  .logo {
+    font-family: 'Sansita', sans-serif;
+    color:$primary;
+    font-size:1.25em;
+    
+    a {
+      color:$primary;
+      text-decoration:none;
+      box-shadow: none;
+
+      &:hover {
+      	box-shadow:none;
+      }
+    }
+  }
+}
+
+.content-container{
+    max-width: 1200px;
+    width:100%;
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+}
+
+.social-container{
+  width:100%;
+  text-align:center;
+  
+  a{
+    display: inline-block;
+    //background:#f1f1f1;
+    border:1px solid #ccc;
+    padding:20px;
+    width:36.5px;
+    height: 36.5px;
+    //height:100px;
+    border-radius:100%;
+    margin:0 auto;
+    text-align:center;
+    color:#ccc;
+    font-size:2em;
+    transition:all .25s;
+    box-shadow: none;
+    &:hover{
+      background:$primary;
+      border: 1px solid transparent;
+      color:#fff;
+      transform:scale(1.1);
+    }
+
+    i {
+    	position: relative;
+    	top: -3px;
+    }
+  }
+}
