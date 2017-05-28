@@ -1,11 +1,11 @@
-$primary:#1373E5;
+$primary:#51c5c7;
 
 .vide {
-	width: 100vw;
-	height: 100vh;
+	width: 105vw;
+	height: 105vh;
 	transition:all .25s;
+  background: linear-gradient(45deg, rgba(5, 19, 255, 0.72), rgba(147, 5, 255, 0.72));
 }
-
 
 
 body {
@@ -14,30 +14,56 @@ body {
   background:#fff;
   overflow: hidden;
 }
+
+
+body {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background:#000; 
+}
+
 a {
 	color: #fff;
     text-decoration: none;
-    box-shadow: inset 0 -19px 0 -15px $primary;
+    box-shadow: inset 0 -17px 0 -15px $primary;
     transition: all .25s;
     &:hover {
-    	box-shadow: inset 0 -90px 0 -15px $primary;
+    	box-shadow: inset 0 -50px 0 -15px $primary;
     };
 }
 
 h1 {
-  font-size:10em;
+  font-size:3em;
   margin-bottom:.25em;
   margin: 0px;
+  line-height: 1em;
   text-align: center;
+  font-family: 'Sansita', sans-serif;
 }
 
 h2 {
   font-size:2em;
   margin-bottom:.75em;
 }
+
 p {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+p:first-of-type {
+  margin-top: 2em;
 }
 
 
@@ -58,7 +84,9 @@ p {
   float: left;
 }
 nav.row {
-  padding:2em 3em;
+  padding:2em 3em 0em;
+  position: relative;
+  z-index: 1000;
   .lnr {
     float: right;
     font-size: 2em;
@@ -95,7 +123,8 @@ nav.row {
   }
   .logo {
     font-family: 'Sansita', sans-serif;
-    color:$primary;
+    font-weight: 900;
+    font-style: italic;
     font-size:1.25em;
     
     a {
@@ -111,42 +140,146 @@ nav.row {
 }
 
 .content-container{
-    max-width: 1200px;
-    width:100%;
+    max-width: 760px;
+    width: 85%;
     margin: 0 auto;
     display: block;
     padding: 1em;
 }
 
+
+
 .social-container{
   width:100%;
   text-align:center;
+  margin-top: 2em; 
   
   a{
     display: inline-block;
-    //background:#f1f1f1;
-    border:1px solid #ccc;
-    padding:20px;
-    width:36.5px;
-    height: 36.5px;
+    //background:#fff;
+    border:1px solid #fff;
+    padding-top:9px;
+    width:50px;
+    height: 50px;
     //height:100px;
     border-radius:100%;
     margin:0 auto;
+    margin-right: .25em;
     text-align:center;
-    color:#ccc;
-    font-size:2em;
+    color:#fff;
+    font-size:1.5em;
     transition:all .25s;
     box-shadow: none;
     &:hover{
       background:$primary;
       border: 1px solid transparent;
       color:#fff;
-      transform:scale(1.1);
+      transform:scale(1.05);
+      border: none;
     }
 
     i {
     	position: relative;
     	top: -3px;
     }
+  }
+
+  a.fb-link{
+    &:hover {
+      background:#3b5998;
+    }
+  }
+
+//credit https://codepen.io/katydecorah/
+  a.insta-link{
+    &:hover { 
+      background:
+// left bottom
+    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    // left top
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+    //  right top
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+    // right bottom
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+    /////// create a base coat to smooth
+    /////// corner gradients
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+    }
+  }
+
+  a.github-link {
+    &:hover {
+      background:#24292e;
+    };
+  }
+
+  a:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.profile-pic {
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  width: 150px;
+}
+
+@media screen and (min-width: 375px) {
+  p {
+      font-size: 16px;
+      line-height: 34px;
+  }
+  .social-container {
+    a { 
+      margin-right: .75em;
+    }
+  }
+
+}
+
+@media screen and (min-width: 520px) {
+  h1 {
+    font-size:5em;
+  }
+
+  .social-container {
+    a {
+      width: 80px;
+      height: 80px;
+      padding-top: 20px;
+      font-size: 2em; 
+    }
+  }
+
+
+}
+
+
+@media screen and (min-width: 760px) {
+
+  p:first-of-type {
+    margin-top: 4em;
+  }
+
+  h1 {
+    font-size:7.5em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .content-container {
+    margin-top: 3em;
+  }
+
+  .social-container {
+    margin-top: 3.5em;
   }
 }
