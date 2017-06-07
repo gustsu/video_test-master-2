@@ -38,7 +38,8 @@ h1 {
   margin: 0px;
   line-height: 1em;
   text-align: center;
-  font-family: 'Sansita', sans-serif; }
+  font-family: 'Sansita', sans-serif;
+  font-style: italic; }
 
 h2 {
   font-size: 2em;
