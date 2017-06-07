@@ -5,6 +5,7 @@ $primary:#51c5c7;
 	height: 105vh;
 	transition:all .25s;
   background: linear-gradient(45deg, rgba(5, 19, 255, 0.72), rgba(147, 5, 255, 0.72));
+  overflow: auto;
 }
 
 
@@ -154,6 +155,7 @@ nav.row {
   width:100%;
   text-align:center;
   margin-top: 2em; 
+  margin-bottom: 1em;
   
   a{
     display: inline-block;

@@ -236,7 +236,7 @@
     $wrapper = vide.$wrapper = $('<div>')
       .addClass(settings.className)
       .css({
-        position: 'absolute',
+        position: 'fixed',
         'z-index': -1,
         top: 0,
         left: 0,
@@ -326,7 +326,7 @@
     // Video alignment
     $video.css({
       margin: 'auto',
-      position: 'absolute',
+      position: 'fixed',
       'z-index': -1,
       top: position.y,
       left: position.x,

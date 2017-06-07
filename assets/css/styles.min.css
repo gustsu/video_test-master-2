@@ -2,7 +2,8 @@
   width: 105vw;
   height: 105vh;
   transition: all .25s;
-  background: linear-gradient(45deg, rgba(5, 19, 255, 0.72), rgba(147, 5, 255, 0.72)); }
+  background: linear-gradient(45deg, rgba(5, 19, 255, 0.72), rgba(147, 5, 255, 0.72));
+  overflow: auto; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -119,7 +120,8 @@ nav.row {
 .social-container {
   width: 100%;
   text-align: center;
-  margin-top: 2em; }
+  margin-top: 2em;
+  margin-bottom: 1em; }
   .social-container a {
     display: inline-block;
     border: 1px solid #fff;
